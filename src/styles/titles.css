@@ -1,0 +1,24 @@
+.animated-gradient {
+    background: linear-gradient(
+      270deg,
+      #E95420,
+      #1793D1,
+      #E95420
+    );
+    background-size: 200% auto;
+    animation: gradient 3s linear infinite;
+    -webkit-background-clip: text;
+  }
+  
+  .background-grid {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  

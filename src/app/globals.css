@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-black min-h-screen;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes gradient-x-shadow {
+  0%, 100% {
+    box-shadow: 0 0 15px #E95420;
+  }
+  50% {
+    box-shadow: 0 0 15px #1793D1;
+  }
 }
+
+.animate-gradient-x-shadow {
+  animation: gradient-x-shadow 2s linear infinite;
+}
+
+.animate-gradient-x-shadow:hover {
+  animation: gradient-x-shadow 1.5s linear infinite;
+}
+
+
