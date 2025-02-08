@@ -205,6 +205,19 @@ export default function RulesSection() {
           Register Now
         </Link>
       </div>
+      <div className="flex justify-center">
+        <Link 
+          href="/projects" 
+          className={`${jetbrains.className} 
+            relative text-white border border-white 
+            px-8 py-2 text-xl
+            hover:text-arch hover:border-arch 
+            hover:scale-110 hover:bg-black
+            transition-all duration-300 rounded-lg
+            animate-gradient-x-shadow`}>
+          View Listed Projects
+        </Link>
+      </div>
     </section>
   );
 }
